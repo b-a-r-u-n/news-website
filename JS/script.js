@@ -1,6 +1,10 @@
 const API_KEY = "f60fd4ab109549039e8b316be0c34f54";
 const URL = "https://newsapi.org/v2/everything?q=";
 
+/* This code snippet is adding click event listeners to three different elements in the HTML document.
+When the element with the id "politics" is clicked, it will call the `fetchData("politics")`
+function. Similarly, when the elements with the ids "cricket" and "job" are clicked, they will call
+`fetchData("cricket")` and `fetchData("job")` functions respectively. */
 document.querySelector("#politics").addEventListener('click' , () => {
     fetchData("politics");
 });

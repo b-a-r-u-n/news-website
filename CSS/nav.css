@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-container{
+    padding: 0 7vw;
+    height: 10vh;
+    background-color: #e9ecef;
+    box-shadow: 1px 1px 10px #adb5bd;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+ul{
+    list-style: none;
+}
+
+.logo a img{
+    height: 5vh;
+    width: 10vw;
+}
+
+.menu ul{
+    gap: 2vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #495057;
+}
+
+.menu ul li:hover{
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.menu ul li:active{
+    color: #343a40;
+    color: #d90429;
+}
+
+.search{
+    padding: .5vh 0.5vw;
+    border: 2px solid grey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search input{
+    height: 2.5vw;
+    width: 13vw;
+    font-size: 1.2vw;
+    /* padding-left: 0.5vw; */
+    border: none;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.search button{
+    height: 100%;
+    padding: 1vh;
+    font-size: 1.2vw;
+    border: none;
+    outline: none;
+    background-color: #00a6fb;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}

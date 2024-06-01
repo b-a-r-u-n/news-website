@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    margin: 15vh 7vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 5vh;
+    align-items: flex-start;
+}
+
+.card{
+    min-height: 45vh;
+    max-width: 20vw;
+    background-color: #e7f6f9;
+    overflow: hidden;
+    padding-bottom: 1.5vh;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.card:hover{
+    transform: translateY(-1vh);
+    background-color: #caf0f8;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 20vh;
+}
+
+.about{
+    padding: 0 1vw;
+}
+
+#title{
+    margin-top: 1vh;
+}
+
+#date{
+    margin-top: 1vh;
+    font-size: 0.9vw;
+}
+
+#desc{
+    margin-top: 1vh;
+    overflow: hidden;
+}

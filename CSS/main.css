@@ -48,5 +48,105 @@
 
 #desc{
     margin-top: 1vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.body{
+    display: none;
+}
+
+@media screen and  (max-width:600px){
+    .card{
+        min-height: 50vh;
+        max-width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+        height: 40vh;
+    }
+
+    .about{
+        padding: 0 3vw;
+    }
+    
+    #title{
+        margin-top: 2vh;
+        font-size: 3.8vw;
+    }
+    
+    #date{
+        margin-top: 2vh;
+        font-size: 3vw;
+    }
+    
+    #desc{
+        margin-top: 2vh;
+        /* overflow: hidden; */
+        font-size: 3.7vw;
+    }
+
+    .body{
+        display: inline-block;
+        height: 100vh;
+        width: 100%;
+        z-index: 200;
+        background-color: #343a40;
+        padding: 2vh 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+    }
+
+    #mobileSearch{
+        height: 4vh;
+        width: 100%;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        padding-left: 3vw;
+        font-weight: 500;
+    }
+
+    #mobileButton{
+        padding: 1vh 0;
+        font-size: 6vw;
+        width: 50%;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1000px){
+    .card{
+        min-height: 50vh;
+        max-width: 48%;
+    }
+
+    .about{
+        padding: 0 3vw;
+    }
+    
+    #title{
+        margin-top: 3vh;
+        font-size: 3.5vw;
+    }
+    
+    #date{
+        margin-top: 3vh;
+        font-size: 2.7vw;
+    }
+    
+    #desc{
+        margin-top: 3vh;
+        /* overflow: hidden; */
+        font-size: 3.3vw;
+    }
 }

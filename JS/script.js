@@ -31,14 +31,14 @@ window.addEventListener('load' , () => {
     fetchData("india");
 })
 
-fetchData = async (query) => {
+const fetchData = async (query) => {
     let responce = await fetch(`${URL}${query}&apiKey=${API_KEY}`);
     let data = await responce.json();
     console.log(data);
     dataBind(data.articles);
 }
 
-dataBind = (articles) => {
+const dataBind = (articles) => {
     let cardContainer = document.querySelector("#card-container");
     let cardTemplate = document.querySelector("#card-template");
 
@@ -54,7 +54,7 @@ dataBind = (articles) => {
     });
 }
 
-getData = (cardClone , article) => {
+const getData = (cardClone , article) => {
     let cardImage = cardClone.querySelector("#card-image");
     let title = cardClone.querySelector("#title");
     let date = cardClone.querySelector("#date");
@@ -72,3 +72,27 @@ getData = (cardClone , article) => {
     })
 }
 
+
+
+
+
+let magnifyingGlass = document.querySelector(".fa-magnifying-glass");
+let body = document.querySelector(".body");
+
+
+magnifyingGlass.addEventListener('click' , () => {
+    body.style.right = 0;
+})
+
+let input = document.querySelector("#mobileSearch");
+let button = document.querySelector("#mobileButton");
+button.addEventListener('click' , () => {
+    let searchData = input.value.toLowerCase();
+    console.log(searchData);
+    if (searchData == "") {
+        return;
+    }
+    body.style.right = "-100%";
+    fetchData(searchData);
+    console.log("Clicked");
+})

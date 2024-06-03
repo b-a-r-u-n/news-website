@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav>
@@ -35,12 +42,20 @@
           />
           <button id="btn">Search</button>
         </div>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
       </div>
     </nav>
 
     <main>
       <div class="main-container flex" id="card-container"></div>
     </main>
+
+    <div class="body">
+      <input type="text" id="mobileSearch" placeholder="Serach News">
+      <button id="mobileButton">Search</button>
+    </body>
 
     <template id="card-template">
       <div class="card">
@@ -54,7 +69,7 @@
             HEll dhfkjd Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Sunt, quae!
           </h3>
-          <h6 id="date">64523km</h6>
+          <h6 id="date">64523</h6>
           <p id="desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
             deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -66,5 +81,6 @@
     </template>
 
     <script src="../JS/script.js"></script>
+    <!-- <script src="../JS/search(mobile).js"></script> -->
   </body>
 </html>

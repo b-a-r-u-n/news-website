@@ -87,3 +87,60 @@ ul{
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }
+
+.search-icon{
+    display: none;
+}
+
+
+
+@media screen and  (max-width:600px){
+    .logo a img{
+        /* height: 5vh; */
+        width: 35vw;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .search-icon{
+        display: inline-block;
+        
+    }
+
+    .search-icon i{
+        font-size: 8vw;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1000px){
+    .logo a img{
+        height: 5vh;
+        width: 20vw;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .search{
+        padding: .5vh 0.5vw;
+    }
+    
+    .search input{
+        height: 2.5vw;
+        width: 15vw;
+        font-size: 1.9vw;
+    }
+    
+    .search button{
+        height: 100%;
+        padding: 1vh;
+        font-size: 1.9vw;
+    }
+}
